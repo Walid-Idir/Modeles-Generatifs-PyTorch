@@ -1,0 +1,7 @@
+# Dépendances pour le TP Modèles Génératifs (PyTorch)
+torch>=2.0.0
+torchvision
+torcheval
+matplotlib
+numpy
+ipykernel

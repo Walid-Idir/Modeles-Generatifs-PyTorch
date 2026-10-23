@@ -1,38 +1,48 @@
-# Environnement virtuel
-.venv/
-venv/
-ENV/
-env/
-
-# Bytecode Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Checkpoints Jupyter
-.ipynb_checkpoints/
+# PyTorch / Deep Learning model weights & checkpoints
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.ckpt
+models/
 
-# Datasets volumineux (MNIST)
+# Data & Datasets
 data/
+*.gz
+*.ubyte
 
-# Fichiers temporaires système / IDE
-.DS_Store
-Thumbs.db
+# Jupyter Notebook checkpoints & backups
+.ipynb_checkpoints/
+*_backup.ipynb
+*-checkpoint.ipynb
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# IDE & OS files
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
+.python-version
 
-# Fichier source du professeur et scripts utilitaires de génération
+# Extra notebooks hors périmètre du travail demandé
 Modeles_generatifs_pytorch (1).ipynb
-generate_notebooks.py
-generate_all_notebooks.py
-main.py
-
-# Autres parties hors périmètre de la demande initiale
 TP2_Partie3_GAN.ipynb
 TP2_Partie4_Diffusion.ipynb
-tp2_partie3_gan.py
-tp2_partie4_diffusion.py
-figures/gan_samples/
-figures/gan_generated_samples.png
-figures/diffusion_degradation.png
-models/gan_*.pth
+
+# Extra scripts & artifacts (conserver un repository 100% Jupyter Notebook)
+*.py
+uv.lock
+pyproject.toml
+figures/
